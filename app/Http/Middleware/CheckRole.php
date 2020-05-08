@@ -19,9 +19,9 @@ class CheckRole
     {
         $user = Auth::user();
         if ($user->role_id == 1) {
-            return $next($request);
+            return redirect('/');
         } elseif ($user->role_id == 2) {
-            return redirect('professional');
+            return redirect('service');
         }
 
     }

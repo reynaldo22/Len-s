@@ -19,5 +19,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/professional', 'ProfessionalController@index');
+Route::get('/home', 'HomeController@index');
+Route::get('/service', 'ServiceController@index');
+Route::post('/service/store', 'ServiceController@store');
+
+Route::get('/service/detail', function () {
+    return view('detail');
+});
+
+Route::get('/service/detail/booking', function () {
+    return view('booking');
+});
