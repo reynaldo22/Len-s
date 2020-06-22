@@ -65,10 +65,11 @@
         <section class="clean-block clean-hero" style="background-image:url({{ asset('images/tech/image4.jpg')}});color:rgba(9, 162, 255, 0.85);">
             <div class="text">
                 <h2>LENS</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                <p>Find your best Photographer and Videographer here</p>
                 <a href="#featured" class="btn btn-outline-light active btn-lg">Cari Fotografer / Videografer</a></div>
         </section>
     </main>
+    {{-- featured --}}
     <h1 id="featured" class="text-center" style="margin-bottom: 20px;margin-top: 20px;">FEATURED</h1>
     <div class="simple-slider">
         <div class="swiper-container">
@@ -80,7 +81,7 @@
                             <div class="col">
                                 <h1>Photografer A</h1>
                                 <p><br>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.<br><br></p>
-                                <p>Rating</p>
+                                <p><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
                             </div>
                         </div>
                         <div class="row">
@@ -95,7 +96,7 @@
                             <div class="col">
                                 <h1>Photografer B</h1>
                                 <p><br>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.<br><br></p>
-                                <p>Rating</p>
+                                <p><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
                             </div>
                         </div>
                         <div class="row">
@@ -110,7 +111,7 @@
                             <div class="col">
                                 <h1>Videografer C</h1>
                                 <p><br>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.<br><br></p>
-                                <p>Rating</p>
+                                <p><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
                             </div>
                         </div>
                         <div class="row">
@@ -124,6 +125,7 @@
             <div class="swiper-button-next"></div>
         </div>
     </div>
+    {{-- list --}}
     <div class="projects-horizontal">
         <div class="container">
             <div class="intro">
@@ -131,7 +133,7 @@
                     <label id="btnPhotografer" class="btn btn-secondary active">Fotografer</label>
                     <label id="btnVideografer" class="btn btn-secondary">Videografer</label>
                 </div>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                <p class="text-center">Find your best services.</p>
             </div>
             {{-- Photographer --}}
             <div id="photographer" class="row projects">
@@ -142,7 +144,9 @@
                             <h3 class="name">Fotografer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,7 +157,9 @@
                             <h3 class="name">Fotografer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,7 +170,9 @@
                             <h3 class="name">Fotografer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -175,7 +183,9 @@
                             <h3 class="name">Fotografer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,7 +196,9 @@
                             <h3 class="name">Fotografer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -197,7 +209,9 @@
                             <h3 class="name">Fotografer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,7 +222,9 @@
                             <h3 class="name">Fotografer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,7 +235,9 @@
                             <h3 class="name">Fotografer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,7 +251,9 @@
                             <h3 class="name">Videographer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -244,7 +264,9 @@
                             <h3 class="name">Videographer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -255,7 +277,9 @@
                             <h3 class="name">Videographer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -266,7 +290,9 @@
                             <h3 class="name">Videographer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -277,7 +303,9 @@
                             <h3 class="name">Videographer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -288,7 +316,9 @@
                             <h3 class="name">Videographer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -299,7 +329,9 @@
                             <h3 class="name">Videographer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -310,7 +342,9 @@
                             <h3 class="name">Videographer A</h3>
                             <p class="description" style="margin-bottom: 10px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
                             <div>
-                                <p class="float-left" style="width: 100px;">Rating</p><button class="btn btn-dark float-right" type="button">See More</button></div>
+                                <p class="float-left"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
+                                <button onclick="location.href = '{{ url('/service/detail') }}';" class="btn btn-dark float-right" type="button">See More</button>
+                            </div>
                         </div>
                     </div>
                 </div>

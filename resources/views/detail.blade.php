@@ -124,7 +124,7 @@
             <p style="color: #000000;">JAKARTA, INDONESIA</p>
             <p style="color: #000000;">Rp. 500.000 - Rp. 5.000.000</p>
             <p style="color: #000000;">Night Fotography, Silluet, Makro, Interrior</p>
-            <p style="color: #000000;">Rating</p>
+            <p style="color: #000000;"><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i><i style="color:orange; font-size:24px;" class="fa fa-star" aria-hidden="true"></i></p>
             <nav class="navbar navbar-light navbar-expand-md">
                 <div class="container-fluid">
                     <button class="btn btn-primary" type="button" onclick="location.href = '{{ url('/service/detail/booking') }}';">Booking</button>
